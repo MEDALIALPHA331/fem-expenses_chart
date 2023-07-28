@@ -25,6 +25,7 @@
   "devDependencies": {
     "eslint-config-prettier": "^8.9.0",
     "prettier": "^3.0.0",
-    "prettier-plugin-tailwindcss": "^0.4.1"
+    "prettier-plugin-tailwindcss": "^0.4.1",
+    "vitest": "^0.33.0"
   }
 }

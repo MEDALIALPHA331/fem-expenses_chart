@@ -17,6 +17,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "14"
+      - name: Clear NPM Cache
+        run: npm cache clean --force
       - name: Install Dependencies
         run: npm ci
       - name: ESLint
@@ -34,6 +36,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "14"
+      - name: Clear NPM Cache
+        run: npm cache clean --force
       - name: Install Dependencies
         run: npm ci
       - name: Run Tests with Vitest
@@ -49,6 +53,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "14"
+      - name: Clear NPM Cache
+        run: npm cache clean --force
       - name: Install Dependencies
         run: npm ci
       - name: TypeScript Type Checking
