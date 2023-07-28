@@ -9,6 +9,10 @@ const nextConfig = {
   experimental: {
     turbo: true,
   },
+
+  images: {
+    deviceSizes: [640, 750, 828, 1080, 1440],
+  },
 };
 
 module.exports = nextConfig;

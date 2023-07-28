@@ -11,12 +11,15 @@ const DmSans = DM_Sans({
   weight: ["400", "700"],
 });
 
+//TODO: Make these from a db
 const BalanceData = 921.48;
 const MonthBalanceData = 478.33;
 const ProgressionData = 2.4;
 
 const MainContainerWidth =
   "sm:min-w-[350px] md:min-w-[34vw] lg:min-w-[50vw] xl:md:min-w-[34vw]";
+const AlternateMainContainerWidth =
+  "w-full sm:w-[75vw] md:w-[50vw] lg:w-[33.33vw]";
 
 function ExpansesChart() {
   return (
@@ -24,15 +27,16 @@ function ExpansesChart() {
       className={`min-h-screen grid place-content-center bg-ec-neutral-cream dark:bg-slate-900 text-slate-950 dark:text-ec-neutral-cream text-lg p-4 md:p-0 ${DmSans.className} font-normal`}
     >
       <div
-        className={`${MainContainerWidth} min-h-[66vh] md:gap-8  gap-4 flex flex-col`}
+        className={`${AlternateMainContainerWidth} min-h-[66vh] md:gap-8 gap-4 flex flex-col`}
       >
-        <div className="w-full flex items-center justify-between bg-ec-primary-soft-red min-h-[128px]  py-2 px-8 rounded-[20px]">
+        <div className="w-full flex items-center justify-between bg-ec-primary-soft-red min-h-[128px] py-1 md:py-2 px-4 md:px-8 rounded-[20px]">
           <div className="text-ec-neutral-very-pale-orange">
-            <h3 className="opacity-70">My Balance</h3>
+            <h3 className="opacity-70 text-sm md:text-base">My Balance</h3>
             <h1 className="font-bold text-xl md:text-4xl">{`$${BalanceData}`}</h1>
           </div>
 
           <div>
+            {/* TODO: make it smaller on smaller screens */}
             <Image src={logo} alt="logo" width={80} height={80} />
           </div>
         </div>
