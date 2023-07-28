@@ -1,6 +1,7 @@
 import React from "react";
 import BarChart from "./(components)/barChart";
 import logo from "@/app/expchart/(assets)/logo.svg";
+
 import Image from "next/image";
 
 import { DM_Sans } from "next/font/google";
