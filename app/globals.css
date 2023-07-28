@@ -25,3 +25,14 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* For Text Highlight in the website */
+p::selection {
+  background: lightblue;
+  color: darkblue;
+}
+
+h1::selection {
+  background: lightgreen;
+  color: darkgreen;
+}
